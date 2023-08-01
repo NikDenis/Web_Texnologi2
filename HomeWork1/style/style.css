@@ -50,6 +50,6 @@ footer {
   height: auto;
   margin: 0 auto 20px;
 }
-footer {
-  padding: 25px 5px;
+.footer {
+  padding: 25px;
 }
