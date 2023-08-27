@@ -3,7 +3,13 @@ const nameButton = document.querySelector(".name-button");
 const userName = document.querySelector(".name-user");
 
 nameButton.addEventListener("click", function () {
-  userName.textContent = inputName.value;
+  if (inputName.value === "") {
+    inputName.style.borderColor = "red";
+    alert("Вы не ввели имя!");
+  } else {
+    inputName.style.borderColor = "green";
+    userName.textContent = inputName.value;
+  }
 });
 
 const chatNameInput = document.querySelector(".chat-name-input");
