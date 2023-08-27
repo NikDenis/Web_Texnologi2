@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашняя работа 3</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="name">
+      <input class="name-input" type="text" placeholder="Введите ваше имя!" />
+      <button class="name-button" type="submit">отправить</button>
+
+      <h2 class="name-title">
+        "Привет <span class="name-user">Ваше имя</span>!"
+      </h2>
+    </div>
+    <hr />
+    <div class="chat">
+      <div class="chat-output"></div>
+
+      <input
+        class="chat-txt-input"
+        type="text"
+        placeholder="Введите сообщение"
+      />
+      <input
+        class="chat-name-input"
+        type="text"
+        placeholder="Введите ваше имя"
+      />
+      <button class="chat-submit">Отправить</button>
+    </div>
+    <hr />
+
+    <div class="massa">
+      <h2 class="massa-title">Посчитаем индекс массы тела</h2>
+
+      <input class="massa-count" type="number" placeholder="Введите ваш вес" />
+      <input
+        class="massa-height"
+        type="number"
+        placeholder="Введите ваш рост в см"
+      />
+      <button class="massa-submit">Отправить</button>
+
+      <div>
+        <span>ИМТ: <span class="massa-index"></span></span>
+      </div>
+      <div>
+        <span>Масса тела: <span class="massa-out"></span></span>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
